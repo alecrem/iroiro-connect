@@ -10,7 +10,7 @@ import {
 } from '@chakra-ui/react'
 import { StyledListItem, StyledText } from '../utils/styledChakraComponents'
 
-const Home: NextPage = () => {
+const Ai: NextPage = () => {
   return (
     <Container maxW="container.lg" mt="2em" mb="4em">
       <HStack spacing="24px">
@@ -94,4 +94,4 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Ai
