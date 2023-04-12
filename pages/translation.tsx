@@ -9,24 +9,11 @@ import {
   Box
 } from '@chakra-ui/react'
 import { StyledListItem } from '../utils/styledChakraComponents'
+import Layout from '../components/Layout'
 
 const Translation: NextPage = () => {
   return (
-    <Container maxW="container.lg" mt="2em" mb="4em">
-      <HStack spacing="24px">
-        <Image
-          src="cropped-iroiro-puzzle.png"
-          alt="iroiro connect logo"
-          htmlHeight={'64'}
-          htmlWidth={'64'}
-        />
-        <VStack alignItems="left">
-          <Heading as="h1">iroiro connect</Heading>
-          <Heading as="h4" size="xs">
-            人もいろいろ、必要とすることもいろいろ。個人個人を大切に思い、それぞれに必要とされるサービスを提供します。
-          </Heading>
-        </VStack>
-      </HStack>
+    <Layout>
       <Heading as="h2" mt="2em">
         翻訳、通訳
       </Heading>
@@ -58,7 +45,7 @@ const Translation: NextPage = () => {
           日本語があまり得意ではないので、病院や学校などの付き添いをお願いしたい方{' '}
         </StyledListItem>
       </UnorderedList>
-    </Container>
+    </Layout>
   )
 }
 
