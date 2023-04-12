@@ -8,7 +8,7 @@ import {
   UnorderedList,
   Box
 } from '@chakra-ui/react'
-import { StyledListItem, StyledText } from '../utils/styledChakraComponents'
+import { StyledListItem } from '../utils/styledChakraComponents'
 
 const Travel: NextPage = () => {
   return (
