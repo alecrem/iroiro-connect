@@ -1,32 +1,11 @@
 import type { NextPage } from 'next'
-import {
-  Container,
-  Heading,
-  Image,
-  HStack,
-  VStack,
-  UnorderedList,
-  Box
-} from '@chakra-ui/react'
+import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
 import { StyledListItem } from '../utils/styledChakraComponents'
+import Layout from '../components/Layout'
 
 const Travel: NextPage = () => {
   return (
-    <Container maxW="container.lg" mt="2em" mb="4em">
-      <HStack spacing="24px">
-        <Image
-          src="cropped-iroiro-puzzle.png"
-          alt="iroiro connect logo"
-          htmlHeight={'64'}
-          htmlWidth={'64'}
-        />
-        <VStack alignItems="left">
-          <Heading as="h1">iroiro connect</Heading>
-          <Heading as="h4" size="xs">
-            人もいろいろ、必要とすることもいろいろ。個人個人を大切に思い、それぞれに必要とされるサービスを提供します。
-          </Heading>
-        </VStack>
-      </HStack>
+    <Layout>
       <Heading as="h2" mt="2em">
         旅行のお手伝い
       </Heading>
@@ -75,7 +54,7 @@ const Travel: NextPage = () => {
           日本の中でも福岡、糸島へ行ってみたいが、日本語があまり得意ではなく不安な方（英語、スペイン語可）
         </StyledListItem>
       </UnorderedList>
-    </Container>
+    </Layout>
   )
 }
 
