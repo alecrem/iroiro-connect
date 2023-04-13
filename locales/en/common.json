@@ -1,14 +1,28 @@
 {
+  "header": {
+    "title": "iroiro connect",
+    "tagline": "Services for unique people with unique needs",
+    "logoalt": "iroiro connect logo",
+    "nav": {
+      "ai": "Ai Cremades Kaijo",
+      "index": "Relocation Support",
+      "travel": "Travel Planning",
+      "translation": "Translation / Interpreting"
+    }
+  },
   "index": {
     "title": "Help Relocating to Itoshima or Fukuoka City"
   },
   "ai": {
-    "title": "iroiro connect Ai Cremadeskaijo"
+    "title": "iroiro connect Ai Cremades Kaijo"
   },
   "travel": {
     "title": "Help With Travel Plans"
   },
   "translation": {
     "title": "Translation, interpreting"
+  },
+  "footer": {
+    "copyright": "©2019-2023 iroiro connect"
   }
 }
