@@ -1,24 +1,18 @@
 import type { NextPage } from 'next'
-import {
-  Container,
-  Heading,
-  Image,
-  HStack,
-  VStack,
-  UnorderedList,
-  Box
-} from '@chakra-ui/react'
+import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import useTranslation from 'next-translate/useTranslation'
 import { StyledListItem } from '../utils/styledChakraComponents'
 import Layout from '../components/Layout'
 
 const Translation: NextPage = () => {
+  const { t, lang } = useTranslation('common')
   return (
     <Layout>
       <Heading as="h2" mt="2em">
-        翻訳、通訳
+        {t('translation.title')}
       </Heading>
       <Box mt="1em">
-        <Image src="family.jpg" alt="クレマデス海上家" />
+        <Image src="/family.jpg" alt="クレマデス海上家" />
       </Box>
 
       <UnorderedList mt="2em">

@@ -1,5 +1,5 @@
 import { ReactElement, ReactNode } from 'react'
-import { Box, Container } from '@chakra-ui/react'
+import { Container } from '@chakra-ui/react'
 import Header from '../Header'
 import Footer from '../Footer'
 

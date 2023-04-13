@@ -1,16 +1,18 @@
 import type { NextPage } from 'next'
 import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import useTranslation from 'next-translate/useTranslation'
 import { StyledListItem, StyledText } from '../utils/styledChakraComponents'
 import Layout from '../components/Layout'
 
 const Ai: NextPage = () => {
+  const { t, lang } = useTranslation('common')
   return (
     <Layout>
       <Heading as="h2" mt="2em">
-        iroiro connect クレマデス海上 愛
+        {t('ai.title')}
       </Heading>
       <Box mt="1em">
-        <Image src="aikaijo.jpg" alt="クレマデス海上 愛" />
+        <Image src="/aikaijo.jpg" alt="クレマデス海上 愛" />
       </Box>
       <StyledText mt="2em">
         iroiro connect（イロイロ コネクト）のクレマデス海上

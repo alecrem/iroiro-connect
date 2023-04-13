@@ -1,16 +1,18 @@
 import type { NextPage } from 'next'
 import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import useTranslation from 'next-translate/useTranslation'
 import { StyledListItem } from '../utils/styledChakraComponents'
 import Layout from '../components/Layout'
 
 const Travel: NextPage = () => {
+  const { t, lang } = useTranslation('common')
   return (
     <Layout>
       <Heading as="h2" mt="2em">
-        旅行のお手伝い
+        {t('travel.title')}
       </Heading>
       <Box mt="1em">
-        <Image src="travel.jpg" alt="旅行のお手伝い" />
+        <Image src="/travel.jpg" alt="旅行のお手伝い" />
       </Box>
 
       <Heading as="h3" size="lg" mt="2em">
