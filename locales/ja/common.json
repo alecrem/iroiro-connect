@@ -1,0 +1,28 @@
+{
+  "header": {
+    "title": "iroiro connect",
+    "tagline": "人もいろいろ、必要とすることもいろいろ。個人個人を大切に思い、それぞれに必要とされるサービスを提供します。",
+    "logoalt": "iroiro connect ロゴ",
+    "nav": {
+      "ai": "クレマデス海上愛",
+      "index": "移住のお手伝い",
+      "travel": "旅行のお手伝い",
+      "translation": "翻訳、通訳"
+    }
+  },
+  "index": {
+    "title": "移住のお手伝い"
+  },
+  "ai": {
+    "title": "iroiro connect クレマデス海上 愛"
+  },
+  "travel": {
+    "title": "旅行のお手伝い"
+  },
+  "translation": {
+    "title": "翻訳、通訳"
+  },
+  "footer": {
+    "copyright": "©2019-2023 iroiro connect"
+  }
+}

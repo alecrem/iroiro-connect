@@ -1,0 +1,28 @@
+{
+  "header": {
+    "title": "iroiro connect",
+    "tagline": "Servicios para gente diferente con necesidades diferentes",
+    "logoalt": "logo de iroiro connect",
+    "nav": {
+      "ai": "Ai Cremades Kaijo",
+      "index": "Ayuda con mudanzas",
+      "travel": "Viajes",
+      "translation": "Traducción e interpretación"
+    }
+  },
+  "index": {
+    "title": "Ayudar con mudanzas a Itoshima o Fukuoka, Japón"
+  },
+  "ai": {
+    "title": "iroiro connect Ai Cremades Kaijo"
+  },
+  "travel": {
+    "title": "Ayudar a organizar viajes"
+  },
+  "translation": {
+    "title": "Traducción e interpretación"
+  },
+  "footer": {
+    "copyright": "©2019-2023 iroiro connect"
+  }
+}
