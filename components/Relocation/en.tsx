@@ -42,23 +42,23 @@ const RelocationEn: NextPage = () => {
       </Heading>
       <UnorderedList mt="2em">
         <StyledListItem>
-          ・Someone who wants to get more detailed information about the area,
-          or just know how things are here before relocating
+          Someone who wants to get more detailed information about the area, or
+          just know how things are here before relocating
         </StyledListItem>
         <StyledListItem>
-          ・Someone who would like some help with relocating because of not
+          Someone who would like some help with relocating because of not
           knowing what to do
         </StyledListItem>
         <StyledListItem>
-          ・Japanese companies which need support for their foreign workers to
+          Japanese companies which need support for their foreign workers to
           start living in Fukuoka or Itoshima comfortably
         </StyledListItem>
         <StyledListItem>
-          ・Someone who needs Japanese support because of not understanding the
+          Someone who needs Japanese support because of not understanding the
           language very well (English and Spanish available)
         </StyledListItem>
         <StyledListItem>
-          ・Someone who needs help because of having little children
+          Someone who needs help because of having little children
         </StyledListItem>
       </UnorderedList>
     </>
