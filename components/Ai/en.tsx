@@ -5,7 +5,7 @@ const AiEn: NextPage = () => {
   return (
     <>
       <Box mt="1em">
-        <Image src="/aikaijo.jpg" alt="クレマデス海上 愛" />
+        <Image src="/aikaijo.jpg" alt="Ai Cremadeskaijo" />
       </Box>
       <StyledText mt="2em">
         Hi! I’m Ai Cremadeskaijo. I am currently living in Itoshima City,

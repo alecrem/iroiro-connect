@@ -5,7 +5,7 @@ const AiEs: NextPage = () => {
   return (
     <>
       <Box mt="1em">
-        <Image src="/aikaijo.jpg" alt="クレマデス海上 愛" />
+        <Image src="/aikaijo.jpg" alt="Ai Cremades Kaijo" />
       </Box>
       <StyledText mt="2em">
         ¡Hola! Soy Ai Cremades Kaijo. Vivo en Itoshima, Fukuoka, Japón con mi

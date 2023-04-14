@@ -5,7 +5,7 @@ const RelocationEs: NextPage = () => {
   return (
     <>
       <Box mt="1em">
-        <Image src="/ijuu-no-otetsudai.jpg" alt="移住のお手伝い" />
+        <Image src="/ijuu-no-otetsudai.jpg" alt="Ayuda con mudanzas a Japón" />
       </Box>
       <UnorderedList mt="2em">
         <StyledListItem>
