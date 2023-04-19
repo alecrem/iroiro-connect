@@ -13,12 +13,14 @@
     "@chakra-ui/react": "^2.3.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
+    "@types/request-ip": "^0.0.37",
     "airtable": "^0.11.6",
     "framer-motion": "^6",
     "next": "12.3.0",
     "next-translate": "^2.0.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "request-ip": "^3.3.0",
     "styled-components": "^5.3.5"
   },
   "devDependencies": {
