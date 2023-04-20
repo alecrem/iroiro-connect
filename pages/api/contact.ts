@@ -4,23 +4,6 @@ import requestIp from 'request-ip'
 import AirtableError from 'airtable/lib/airtable_error'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
-  const base = new Airtable({
-    apiKey: process.env.AIRTABLE_API_KEY
-  }).base(process.env.AIRTABLE_BASE_ID ?? '')
-  const table = base(process.env.AIRTABLE_TABLE_NAME ?? '')
-
-  const detectedIp = requestIp.getClientIp(req) ?? ''
-  const userAgent =
-    req.rawHeaders[req.rawHeaders.indexOf('User-Agent') + 1] ?? ''
-  const fields = {
-    name: 'alecrem',
-    email: 'ale@alecrem.com',
-    message: 'Prueba desde la web.',
-    useragent: userAgent,
-    ipaddress: detectedIp,
-    date: new Date().toISOString()
-  }
-
   async function createRecord() {
     return await table.create([{ fields: fields }])
   }
@@ -32,7 +15,28 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     })
     return
   }
+  const returnGenericError = () => {
+    res.status(500).json({ status: 'error', message: 'Something went wrong.' })
+    return
+  }
 
+  const base = new Airtable({
+    apiKey: process.env.AIRTABLE_API_KEY
+  }).base(process.env.AIRTABLE_BASE_ID ?? '')
+  const table = base(process.env.AIRTABLE_TABLE_NAME ?? '')
+
+  const body = req.body
+  const detectedIp = requestIp.getClientIp(req) ?? ''
+  const userAgent =
+    req.rawHeaders[req.rawHeaders.indexOf('User-Agent') + 1] ?? ''
+  const fields = {
+    name: body.name,
+    email: body.email,
+    message: body.message,
+    useragent: userAgent,
+    ipaddress: detectedIp,
+    date: new Date().toISOString()
+  }
   let ret
   try {
     ret = await createRecord()
@@ -41,7 +45,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     returnError(err)
   }
   if (ret == undefined || ret?.length < 1) {
-    res.status(500).json({ status: 'error', message: 'Something went wrong.' })
+    returnGenericError()
     return
   }
   res.status(200).json({ status: 'success', data: { id: ret[0].fields.id } })
