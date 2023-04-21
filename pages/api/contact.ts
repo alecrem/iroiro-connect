@@ -4,6 +4,12 @@ import requestIp from 'request-ip'
 import AirtableError from 'airtable/lib/airtable_error'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
+  if (req.method !== 'POST') {
+    res
+      .status(405)
+      .json({ status: 'error', message: `Method ${req.method} Not Allowed` })
+    return
+  }
   async function createRecord() {
     return await table.create([{ fields: fields }])
   }
