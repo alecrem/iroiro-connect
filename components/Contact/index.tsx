@@ -16,6 +16,7 @@ export default function Contact() {
   const [name, setName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [message, setMessage] = useState<string>('')
+  const [submitting, setSubmitting] = useState(false)
 
   const resetForm = () => {
     setName('')
@@ -40,13 +41,16 @@ export default function Contact() {
       },
       body: JSONdata
     }
+    setSubmitting(true)
     const response = await fetch(endpoint, options)
     const result = await response.json()
     if (result.status === 'success') {
       resetForm()
+      setSubmitting(false)
       alert(t('post.success'))
     } else {
       let errorMsg = result.message
+      setSubmitting(false)
       if (result.errorCode) errorMsg += ` (errorCode ${result.errorCode})`
       alert(t('post.error', { errorMsg: errorMsg }))
     }
@@ -104,7 +108,9 @@ export default function Contact() {
             />
           </FormControl>
           <FormControl id="submit-fc">
-            <Button type="submit">{t('form.submit.text')}</Button>
+            <Button type="submit" disabled={submitting}>
+              {t('form.submit.text')}
+            </Button>
           </FormControl>
         </VStack>
       </form>
