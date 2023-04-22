@@ -6,7 +6,8 @@ import {
   FormLabel,
   Input,
   InputGroup,
-  Textarea
+  Textarea,
+  Text
 } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
 import { StyledText } from '../../utils/styledChakraComponents'
@@ -18,6 +19,8 @@ export default function Contact() {
   const [email, setEmail] = useState<string>('')
   const [message, setMessage] = useState<string>('')
   const [submitting, setSubmitting] = useState(false)
+  const [succeeded, setSucceeded] = useState<boolean>()
+  const [errorMessage, setErrorMessage] = useState<string>('')
 
   const resetForm = () => {
     setName('')
@@ -28,6 +31,7 @@ export default function Contact() {
     if (!isValidEmailAddress(email)) return false
     if (name.length < 1) return false
     if (message.length < 1) return false
+    if (succeeded === true) return false
     return !submitting
   }
   const handleSubmit = async (event: any) => {
@@ -54,12 +58,13 @@ export default function Contact() {
     if (result.status === 'success') {
       resetForm()
       setSubmitting(false)
-      alert(t('post.success'))
+      setSucceeded(true)
     } else {
-      let errorMsg = result.message
+      if (result.errorCode)
+        setErrorMessage(result.message + ` (errorCode ${result.errorCode})`)
+      else setErrorMessage(result.message)
       setSubmitting(false)
-      if (result.errorCode) errorMsg += ` (errorCode ${result.errorCode})`
-      alert(t('post.error', { errorMsg: errorMsg }))
+      setSucceeded(false)
     }
   }
 
@@ -115,9 +120,15 @@ export default function Contact() {
             />
           </FormControl>
           <FormControl id="submit-fc">
-            <Button type="submit" disabled={!isSubmittable()}>
+            <Button type="submit" disabled={!isSubmittable()} mb={4}>
               {t('form.submit.text')}
             </Button>
+            {succeeded && <Text color="#080">{t('post.success')}</Text>}
+            {succeeded === false && (
+              <Text color="#c00">
+                {t('post.error', { errorMsg: errorMessage })}
+              </Text>
+            )}
           </FormControl>
         </VStack>
       </form>
