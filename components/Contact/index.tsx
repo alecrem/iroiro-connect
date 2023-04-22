@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
 import { StyledText } from '../../utils/styledChakraComponents'
+import { isValidEmailAddress } from '../../utils/formValidation'
 
 export default function Contact() {
   const { t } = useTranslation('contact')
@@ -23,16 +24,10 @@ export default function Contact() {
     setEmail('')
     setMessage('')
   }
-  const isValidEmailAddress = (val: string): boolean => {
-    let regEmail =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    return regEmail.test(val)
-  }
   const isSubmittable = (): boolean => {
-    if (name.length < 1) return false
-    if (email.length < 1) return false
-    if (message.length < 1) return false
     if (!isValidEmailAddress(email)) return false
+    if (name.length < 1) return false
+    if (message.length < 1) return false
     return !submitting
   }
   const handleSubmit = async (event: any) => {
