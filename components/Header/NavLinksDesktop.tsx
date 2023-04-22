@@ -29,6 +29,11 @@ const NavLinksDesktop: FC = () => {
           {t('header.nav.translation')}
         </Link>
       </NextLink>
+      <NextLink passHref href="/contact" locale={router.locale}>
+        <Link _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+          {t('header.nav.contact')}
+        </Link>
+      </NextLink>
     </>
   )
 }

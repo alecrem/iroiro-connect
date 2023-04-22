@@ -53,6 +53,17 @@ const NavLinksMobile: FC = () => {
           {t('header.nav.translation')}
         </Button>
       </NextLink>
+      <NextLink passHref href="/contact" locale={router.locale}>
+        <Button
+          as="a"
+          variant="ghost"
+          aria-label={t('header.nav.contact')}
+          my={2}
+          w="100%"
+        >
+          {t('header.nav.contact')}
+        </Button>
+      </NextLink>
     </>
   )
 }

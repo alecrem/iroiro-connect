@@ -7,7 +7,8 @@
       "ai": "Ai Cremades Kaijo",
       "index": "Mudanzas",
       "travel": "Viajes",
-      "translation": "Traducción"
+      "translation": "Traducción",
+      "contact": "Contacto"
     }
   },
   "index": {
@@ -21,6 +22,9 @@
   },
   "translation": {
     "title": "Traducción e interpretación"
+  },
+  "contact": {
+    "title": "Contacto"
   },
   "footer": {
     "copyright": "©2019-2023 iroiro connect"
