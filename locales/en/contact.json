@@ -1,0 +1,24 @@
+{
+  "form": {
+    "cta": "Please feel free to contact me through the form below to learn more about the service and pricing.",
+    "name": {
+      "label": "Your Name",
+      "placeholder": "Your name here"
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "yourmail@address.com"
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Your inquiry here"
+    },
+    "submit": {
+      "text": "Send"
+    }
+  },
+  "post": {
+    "success": "Thank you for getting in touch. I will reply shortly.",
+    "error": "I am sorry but there was a problem sending your message: {{errorMsg}}"
+  }
+}

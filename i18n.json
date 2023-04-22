@@ -2,6 +2,6 @@
   "locales": ["en", "ja", "es"],
   "defaultLocale": "ja",
   "pages": {
-    "*": ["common"]
+    "*": ["common", "contact"]
   }
 }
