@@ -23,6 +23,18 @@ export default function Contact() {
     setEmail('')
     setMessage('')
   }
+  const isValidEmailAddress = (val: string): boolean => {
+    let regEmail =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    return regEmail.test(val)
+  }
+  const isSubmittable = (): boolean => {
+    if (name.length < 1) return false
+    if (email.length < 1) return false
+    if (message.length < 1) return false
+    if (!isValidEmailAddress(email)) return false
+    return !submitting
+  }
   const handleSubmit = async (event: any) => {
     event.preventDefault()
 
@@ -108,7 +120,7 @@ export default function Contact() {
             />
           </FormControl>
           <FormControl id="submit-fc">
-            <Button type="submit" disabled={submitting}>
+            <Button type="submit" disabled={!isSubmittable()}>
               {t('form.submit.text')}
             </Button>
           </FormControl>
