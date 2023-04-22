@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import Airtable from 'airtable'
 import requestIp from 'request-ip'
 import AirtableError from 'airtable/lib/airtable_error'
+import { isValidEmailAddress } from '../../utils/formValidation'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') {
@@ -21,6 +22,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     })
     return
   }
+  const returnBadRequest = () => {
+    res.status(400).json({
+      status: 'error',
+      message: 'Please enter the required information carefully.'
+    })
+    return
+  }
   const returnGenericError = () => {
     res.status(500).json({ status: 'error', message: 'Something went wrong.' })
     return
@@ -32,6 +40,10 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const table = base(process.env.AIRTABLE_TABLE_NAME ?? '')
 
   const body = req.body
+  if (!isValidEmailAddress(body.email)) returnBadRequest()
+  if (body.name.length < 1) returnBadRequest()
+  if (body.message.length < 1) returnBadRequest()
+
   const detectedIp = requestIp.getClientIp(req) ?? ''
   const userAgent =
     req.rawHeaders[req.rawHeaders.indexOf('User-Agent') + 1] ?? ''

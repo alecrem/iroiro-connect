@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
 import { StyledText } from '../../utils/styledChakraComponents'
+import { isValidEmailAddress } from '../../utils/formValidation'
 
 export default function Contact() {
   const { t } = useTranslation('contact')
@@ -22,6 +23,12 @@ export default function Contact() {
     setName('')
     setEmail('')
     setMessage('')
+  }
+  const isSubmittable = (): boolean => {
+    if (!isValidEmailAddress(email)) return false
+    if (name.length < 1) return false
+    if (message.length < 1) return false
+    return !submitting
   }
   const handleSubmit = async (event: any) => {
     event.preventDefault()
@@ -108,7 +115,7 @@ export default function Contact() {
             />
           </FormControl>
           <FormControl id="submit-fc">
-            <Button type="submit" disabled={submitting}>
+            <Button type="submit" disabled={!isSubmittable()}>
               {t('form.submit.text')}
             </Button>
           </FormControl>
