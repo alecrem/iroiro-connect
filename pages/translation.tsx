@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import { Heading } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
 import Layout from '../components/Layout'
+import Contact from '../components/Contact'
 import {
   TranslationJa,
   TranslationEs,
@@ -18,6 +19,7 @@ const Translation: NextPage = () => {
       {lang === 'ja' && <TranslationJa />}
       {lang === 'es' && <TranslationEs />}
       {lang === 'en' && <TranslationEn />}
+      <Contact />
     </Layout>
   )
 }
