@@ -7,7 +7,15 @@ import Contact from '../components/Contact'
 const ContactPage: NextPage = () => {
   const { t } = useTranslation('common')
   return (
-    <Layout>
+    <Layout
+      title={
+        t('header.nav.contact') +
+        ' | ' +
+        t('header.title') +
+        ' - ' +
+        t('header.tagline')
+      }
+    >
       <Heading as="h2" mt="2em">
         {t('contact.title')}
       </Heading>
