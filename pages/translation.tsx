@@ -12,7 +12,15 @@ import {
 const Translation: NextPage = () => {
   const { t, lang } = useTranslation('common')
   return (
-    <Layout>
+    <Layout
+      title={
+        t('header.nav.translation') +
+        ' | ' +
+        t('header.title') +
+        ' - ' +
+        t('header.tagline')
+      }
+    >
       <Heading as="h2" mt="2em">
         {t('translation.title')}
       </Heading>

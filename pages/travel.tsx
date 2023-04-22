@@ -8,7 +8,15 @@ import { TravelJa, TravelEs, TravelEn } from '../components/Travel/'
 const Travel: NextPage = () => {
   const { t, lang } = useTranslation('common')
   return (
-    <Layout>
+    <Layout
+      title={
+        t('header.nav.travel') +
+        ' | ' +
+        t('header.title') +
+        ' - ' +
+        t('header.tagline')
+      }
+    >
       <Heading as="h2" mt="2em">
         {t('travel.title')}
       </Heading>
