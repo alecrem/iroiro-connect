@@ -1,0 +1,24 @@
+{
+  "form": {
+    "cta": " Si tienes alguna pregunta o necesitas algo, ¡por favor no dudes en ponerte en contacto conmigo!",
+    "name": {
+      "label": "Nombre",
+      "placeholder": "Tu nombre"
+    },
+    "email": {
+      "label": "Dirección de correo electrónico",
+      "placeholder": "tudireccion@correoelectronico.es"
+    },
+    "message": {
+      "label": " Mensaje",
+      "placeholder": "Tu mensaje o pregunta"
+    },
+    "submit": {
+      "text": "Enviar"
+    }
+  },
+  "post": {
+    "success": "Gracias por ponerte en contacto. Te contestaré en breve.",
+    "error": "Lo siento, pero ha habido un problema enviando tu mensaje: {{errorMsg}}"
+  }
+}

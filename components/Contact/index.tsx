@@ -8,9 +8,11 @@ import {
   InputGroup,
   Textarea
 } from '@chakra-ui/react'
+import useTranslation from 'next-translate/useTranslation'
 import { StyledText } from '../../utils/styledChakraComponents'
 
 export default function Contact() {
+  const { t } = useTranslation('contact')
   const [name, setName] = useState<string>('')
   const [email, setEmail] = useState<string>('')
   const [message, setMessage] = useState<string>('')
@@ -42,13 +44,11 @@ export default function Contact() {
     const result = await response.json()
     if (result.status === 'success') {
       resetForm()
-      alert('Thank you for getting in touch. I will reply shortly.')
+      alert(t('post.success'))
     } else {
       let errorMsg = result.message
       if (result.errorCode) errorMsg += ` (errorCode ${result.errorCode})`
-      alert(
-        'I am sorry but there was a problem sending your message: ' + errorMsg
-      )
+      alert(t('post.error', { errorMsg: errorMsg }))
     }
   }
 
@@ -56,14 +56,11 @@ export default function Contact() {
     <>
       <StyledText mt={16}></StyledText>
       <hr />
-      <StyledText>
-        Please feel free to contact me through the form below to learn more
-        about the service and pricing.
-      </StyledText>
+      <StyledText>{t('form.cta')}</StyledText>
       <form onSubmit={handleSubmit}>
         <VStack spacing={5} mt={4}>
           <FormControl id="name-fc">
-            <FormLabel>Your Name</FormLabel>
+            <FormLabel>{t('form.name.label')}</FormLabel>
             <InputGroup>
               <Input
                 id="name"
@@ -74,12 +71,12 @@ export default function Contact() {
                 onChange={(e) => {
                   setName(e.target.value)
                 }}
-                placeholder="Your name here"
+                placeholder={t('form.name.placeholder')}
               />
             </InputGroup>
           </FormControl>
           <FormControl id="email-fc">
-            <FormLabel>E-mail</FormLabel>
+            <FormLabel>{t('form.email.label')}</FormLabel>
             <InputGroup>
               <Input
                 id="email"
@@ -90,12 +87,12 @@ export default function Contact() {
                 onChange={(e) => {
                   setEmail(e.target.value)
                 }}
-                placeholder="yourmail@address.com"
+                placeholder={t('form.email.label')}
               />
             </InputGroup>
           </FormControl>
           <FormControl id="message-fc">
-            <FormLabel>Message</FormLabel>
+            <FormLabel>{t('form.message.label')}</FormLabel>
             <Textarea
               id="message"
               name="message"
@@ -103,11 +100,11 @@ export default function Contact() {
               onChange={(e) => {
                 setMessage(e.target.value)
               }}
-              placeholder="Your inquiry here"
+              placeholder={t('form.message.label')}
             />
           </FormControl>
           <FormControl id="submit-fc">
-            <Button type="submit">Send</Button>
+            <Button type="submit">{t('form.submit.text')}</Button>
           </FormControl>
         </VStack>
       </form>
