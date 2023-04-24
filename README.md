@@ -1,22 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# [iroiro-connect.com](https://iroiro-connect.com/)
+
+This is a [Next.js](https://nextjs.org/) project with its content localized using both [next-translate](https://github.com/aralroca/next-translate) strings and Components switched according to the active language.
+
+The UI components are [chakra](https://chakra-ui.com/), and the contact form uses a Next.js API route that speaks to the Airtable API using [airtable.js](https://github.com/airtable/airtable.js). Be sure to fill your `env.local` according to `.env.sample`, and feel free to copy this [sample table](https://airtable.com/shrkXQYdPx4dnUm1d) to your own workspace.
 
 ## Getting Started
 
-First, run the development server:
+First, install all dependencies. We recommend using `yarn` for this project:
 
 ```bash
-npm run dev
-# or
+yarn
+```
+
+Then, run the development server:
+
+```bash
 yarn dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
 ## Learn More
 
@@ -29,6 +31,6 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The easiest way to deploy your fork os this project is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
