@@ -88,6 +88,7 @@ export default function Contact() {
                   setName(e.target.value)
                 }}
                 placeholder={t('form.name.placeholder')}
+                disabled={succeeded}
               />
             </InputGroup>
           </FormControl>
@@ -104,6 +105,7 @@ export default function Contact() {
                   setEmail(e.target.value)
                 }}
                 placeholder={t('form.email.label')}
+                disabled={succeeded}
               />
             </InputGroup>
           </FormControl>
@@ -117,6 +119,7 @@ export default function Contact() {
                 setMessage(e.target.value)
               }}
               placeholder={t('form.message.label')}
+              disabled={succeeded}
             />
           </FormControl>
           <FormControl id="submit-fc">
