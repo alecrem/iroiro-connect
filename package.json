@@ -13,7 +13,7 @@
     "@chakra-ui/react": "^2.3.2",
     "@emotion/react": "^11",
     "@emotion/styled": "^11",
-    "@types/request-ip": "^0.0.37",
+    "@types/request-ip": "^0.0.41",
     "airtable": "^0.12.2",
     "framer-motion": "^11",
     "next": "15.0.3",
