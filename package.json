@@ -15,7 +15,7 @@
     "@emotion/styled": "^11",
     "@types/request-ip": "^0.0.41",
     "airtable": "^0.12.2",
-    "framer-motion": "^11",
+    "framer-motion": "^12",
     "next": "15.1.4",
     "next-translate": "^2.6.2",
     "react": "18.3.1",
