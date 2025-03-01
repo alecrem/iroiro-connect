@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import { Heading, Image, List, Box } from '@chakra-ui/react'
 import { StyledListItem, StyledText } from '../../utils/styledChakraComponents'
 const AiEn: NextPage = () => {
   return (
@@ -92,7 +92,7 @@ const AiEn: NextPage = () => {
       <Heading as="h3" size="lg" mt="2em">
         Qualifications:
       </Heading>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>TOEIC 810 (2002)</StyledListItem>
         <StyledListItem>
           Koto Assistant Instructor diploma (Japanese traditional instrument)
@@ -101,7 +101,7 @@ const AiEn: NextPage = () => {
         <StyledListItem>
           EIKEN Test in Practical English Proficiency Grade Pre-1 (1992)
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
 
       <Heading as="h3" size="lg" mt="2em">
         Work Experience:
@@ -112,7 +112,7 @@ const AiEn: NextPage = () => {
         <br />
         <b>“iroiro connect”</b> Self-Employed
       </StyledText>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           Help relocating to Itoshima or Fukuoka City
         </StyledListItem>
@@ -120,7 +120,7 @@ const AiEn: NextPage = () => {
         <StyledListItem>
           Translation, interpretation (English ⇔ Japanese, Spanish ⇔ Japanese)
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
 
       <StyledText mt="2em">
         Mar 2006 – Jan 2019
@@ -132,7 +132,7 @@ const AiEn: NextPage = () => {
           600 volunteers.
         </i>
       </StyledText>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           Communicated regularly with over 40 liaison offices abroad in English
         </StyledListItem>
@@ -144,7 +144,7 @@ const AiEn: NextPage = () => {
         <StyledListItem>
           In charge of meetings of the board of directors and general meetings
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
 
       <StyledText mt="2em">
         Dec 1999 – July 2004
@@ -156,7 +156,7 @@ const AiEn: NextPage = () => {
           in Yamaguchi, Japan, employs around 800.
         </i>
       </StyledText>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           Responsible for payroll and procedures for social insurance for 800
           employees
@@ -170,7 +170,7 @@ const AiEn: NextPage = () => {
         <StyledListItem>
           Managed events for employees and their families
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
 
       <StyledText mt="2em">
         Apr 1998 – Dec 1999
@@ -181,7 +181,7 @@ const AiEn: NextPage = () => {
           and had some subsidiaries abroad.
         </i>
       </StyledText>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           In charge of communicating with USA subsidiary and big clients in
           Korea and Taiwan
@@ -191,7 +191,7 @@ const AiEn: NextPage = () => {
           Responsible for accompanying overseas clients to game shows and gaming
           facilities in Japan
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
     </>
   )
 }

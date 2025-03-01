@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import { Heading, Image, List, Box } from '@chakra-ui/react'
 import { StyledListItem } from '../../utils/styledChakraComponents'
 const RelocationJa: NextPage = () => {
   return (
@@ -7,7 +7,7 @@ const RelocationJa: NextPage = () => {
       <Box mt="1em">
         <Image src="/ijuu-no-otetsudai.jpg" alt="移住のお手伝い" />
       </Box>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           事前調査
           <br />
@@ -28,11 +28,11 @@ const RelocationJa: NextPage = () => {
           引っ越しのお手伝い <br />
           荷ほどきや子守り、買い物など、手が足りない部分をサポートします。
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
       <Heading as="h3" size="lg" mt="2em">
         どんな人へ向けたサービス？
       </Heading>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           移住前により詳細な情報、実情を知りたい方
         </StyledListItem>
@@ -51,7 +51,7 @@ const RelocationJa: NextPage = () => {
         <StyledListItem>
           もっと地域の方と触れ合いたいけど、誰にどう聞いていいか分からない移住者の方
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
     </>
   )
 }

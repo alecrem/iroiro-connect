@@ -7,7 +7,7 @@ import {
   IconButton,
   Flex
 } from '@chakra-ui/react'
-import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons'
+import { LuMenu, LuX } from 'react-icons/lu'
 import useTranslation from 'next-translate/useTranslation'
 import NavLinksMobile from './NavLinksMobile'
 import NavLinksDesktop from './NavLinksDesktop'
@@ -23,11 +23,12 @@ const Header: FC = () => {
           <IconButton
             aria-label="Open Menu"
             size="lg"
-            icon={<HamburgerIcon />}
             onClick={() => changeDisplay('flex')}
             // Mobile only
             display={['flex', 'flex', 'none', 'none']}
-          />
+          >
+            <LuMenu />
+          </IconButton>
         </Flex>
 
         <Flex
@@ -49,9 +50,10 @@ const Header: FC = () => {
               mr={2}
               aria-label="Close Menu"
               size="lg"
-              icon={<CloseIcon />}
               onClick={() => changeDisplay('none')}
-            />
+            >
+              <LuX />
+            </IconButton>
           </Flex>
 
           <Flex flexDir="column" align="center">
@@ -61,7 +63,7 @@ const Header: FC = () => {
         </Flex>
       </Flex>
 
-      <HStack spacing="24px">
+      <HStack gap="24px">
         <Image
           src="/cropped-iroiro-puzzle.png"
           alt={t('header.logoalt')}
