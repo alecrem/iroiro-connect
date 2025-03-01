@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import { Heading, Image, List, Box } from '@chakra-ui/react'
 import { StyledListItem, StyledText } from '../../utils/styledChakraComponents'
 const RelocationEn: NextPage = () => {
   return (
@@ -8,10 +8,10 @@ const RelocationEn: NextPage = () => {
         <Image src="/family.jpg" alt="Cremadeskaijo family" />
       </Box>
 
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>English ⇔ Japanese</StyledListItem>
         <StyledListItem>Spanish ⇔ Japanese</StyledListItem>
-      </UnorderedList>
+      </List.Root>
       <StyledText mt="2em">
         Basically, I will be able to handle any affairs within Fukuoka
         Prefecture, but I would be happy to support you even outside of Fukuoka
@@ -21,7 +21,7 @@ const RelocationEn: NextPage = () => {
       <Heading as="h3" size="lg" mt="2em">
         Who could find this service useful?
       </Heading>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           Japanese restaurants or any kind of establishments which need to have
           a menu or indications ready in English or Spanish to welcome foreign
@@ -49,7 +49,7 @@ const RelocationEn: NextPage = () => {
           Someone who relocated to Itoshima or Fukuoka, and wishes to
           communicate more with local residents but doesn’t know where to start.
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
     </>
   )
 }

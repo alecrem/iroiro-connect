@@ -1,13 +1,19 @@
-import { Button, Box } from '@chakra-ui/react'
+import { Button, Box, ConditionalValue } from '@chakra-ui/react'
 import { FC } from 'react'
 import useTranslation from 'next-translate/useTranslation'
 import setLanguage from 'next-translate/setLanguage'
 
 interface IProps {
-  size: string
+  size: ConditionalValue<
+    'sm' | 'md' | 'lg' | 'xl' | '2xl' | '2xs' | 'xs' | undefined
+  >
 }
 
-const NavLanguageButtons: FC<IProps> = (props: { size: string }) => {
+const NavLanguageButtons: FC<IProps> = (props: {
+  size: ConditionalValue<
+    'sm' | 'md' | 'lg' | 'xl' | '2xl' | '2xs' | 'xs' | undefined
+  >
+}) => {
   const { lang } = useTranslation('common')
   return (
     <>

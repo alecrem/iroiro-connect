@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import { Heading, Image, List, Box } from '@chakra-ui/react'
 import { StyledListItem, StyledText } from '../../utils/styledChakraComponents'
 const AiEs: NextPage = () => {
   return (
@@ -71,7 +71,7 @@ const AiEs: NextPage = () => {
       <Heading as="h3" size="lg" mt="2em">
         Certificaciones:
       </Heading>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>TOEIC 810 (2002)</StyledListItem>
         <StyledListItem>
           Diploma de Instructor Adjunto de Koto (instrumento tradicional
@@ -80,7 +80,7 @@ const AiEs: NextPage = () => {
         <StyledListItem>
           EIKEN Test in Practical English Proficiency Grade Pre-1 (1992)
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
 
       <Heading as="h3" size="lg" mt="2em">
         Experiencia profesional:

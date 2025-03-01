@@ -1,14 +1,5 @@
 import { useState } from 'react'
-import {
-  Button,
-  VStack,
-  FormControl,
-  FormLabel,
-  Input,
-  InputGroup,
-  Textarea,
-  Text
-} from '@chakra-ui/react'
+import { Button, VStack, Input, Textarea, Text, Field } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
 import { StyledText } from '../../utils/styledChakraComponents'
 import { isValidEmailAddress } from '../../utils/formValidation'
@@ -74,43 +65,39 @@ export default function Contact() {
       <hr />
       <StyledText>{t('form.cta')}</StyledText>
       <form onSubmit={handleSubmit}>
-        <VStack spacing={5} mt={4}>
-          <FormControl id="name-fc">
-            <FormLabel>{t('form.name.label')}</FormLabel>
-            <InputGroup>
-              <Input
-                id="name"
-                name="name"
-                value={name}
-                type="text"
-                size="md"
-                onChange={(e) => {
-                  setName(e.target.value)
-                }}
-                placeholder={t('form.name.placeholder')}
-                disabled={succeeded}
-              />
-            </InputGroup>
-          </FormControl>
-          <FormControl id="email-fc">
-            <FormLabel>{t('form.email.label')}</FormLabel>
-            <InputGroup>
-              <Input
-                id="email"
-                name="email"
-                value={email}
-                type="email"
-                size="md"
-                onChange={(e) => {
-                  setEmail(e.target.value)
-                }}
-                placeholder={t('form.email.label')}
-                disabled={succeeded}
-              />
-            </InputGroup>
-          </FormControl>
-          <FormControl id="message-fc">
-            <FormLabel>{t('form.message.label')}</FormLabel>
+        <VStack gap={5} mt={4}>
+          <Field.Root id="name-fc">
+            <Field.Label>{t('form.name.label')}</Field.Label>
+            <Input
+              id="name"
+              name="name"
+              value={name}
+              type="text"
+              size="md"
+              onChange={(e) => {
+                setName(e.target.value)
+              }}
+              placeholder={t('form.name.placeholder')}
+              disabled={succeeded}
+            />
+          </Field.Root>
+          <Field.Root id="email-fc">
+            <Field.Label>{t('form.email.label')}</Field.Label>
+            <Input
+              id="email"
+              name="email"
+              value={email}
+              type="email"
+              size="md"
+              onChange={(e) => {
+                setEmail(e.target.value)
+              }}
+              placeholder={t('form.email.label')}
+              disabled={succeeded}
+            />
+          </Field.Root>
+          <Field.Root id="message-fc">
+            <Field.Label>{t('form.message.label')}</Field.Label>
             <Textarea
               id="message"
               name="message"
@@ -121,8 +108,8 @@ export default function Contact() {
               placeholder={t('form.message.label')}
               disabled={succeeded}
             />
-          </FormControl>
-          <FormControl id="submit-fc">
+          </Field.Root>
+          <Field.Root id="submit-fc">
             <Button type="submit" disabled={!isSubmittable()} mb={4}>
               {t('form.submit.text')}
             </Button>
@@ -132,7 +119,7 @@ export default function Contact() {
                 {t('post.error', { errorMsg: errorMessage })}
               </Text>
             )}
-          </FormControl>
+          </Field.Root>
         </VStack>
       </form>
     </>
