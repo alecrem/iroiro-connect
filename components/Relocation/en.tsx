@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import { Heading, Image, Box, List } from '@chakra-ui/react'
 import { StyledListItem, StyledText } from '../../utils/styledChakraComponents'
 const RelocationEn: NextPage = () => {
   return (
@@ -10,7 +10,7 @@ const RelocationEn: NextPage = () => {
           alt="Help with relocating to Japan"
         />
       </Box>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           Help finding information before moving
           <br />I will help with house hunting, and find information about
@@ -33,7 +33,7 @@ const RelocationEn: NextPage = () => {
           <br />I will help unpacking, take care of the children, go shopping
           for you, etc.
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
       <StyledText mt="2em">
         Basically, I will be able to handle any affairs within Fukuoka
         Prefecture, but I would be happy to support you even outside of Fukuoka
@@ -43,7 +43,7 @@ const RelocationEn: NextPage = () => {
       <Heading as="h3" size="lg" mt="2em">
         Who could find this service useful?
       </Heading>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           Someone who wants to get more detailed information about the area, or
           just know how things are here before relocating
@@ -63,7 +63,7 @@ const RelocationEn: NextPage = () => {
         <StyledListItem>
           Someone who needs help because of having little children
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
     </>
   )
 }

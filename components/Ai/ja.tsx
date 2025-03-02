@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import { Heading, Image, List, Box } from '@chakra-ui/react'
 import { StyledListItem, StyledText } from '../../utils/styledChakraComponents'
 const AiJa: NextPage = () => {
   return (
@@ -59,11 +59,11 @@ const AiJa: NextPage = () => {
       <Heading as="h3" size="lg" mt="2em">
         保有資格：
       </Heading>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>実用英語技能検定 準1級</StyledListItem>
         <StyledListItem>琴 師範補</StyledListItem>
         <StyledListItem>TOEIC公開テスト 810点</StyledListItem>
-      </UnorderedList>
+      </List.Root>
     </>
   )
 }

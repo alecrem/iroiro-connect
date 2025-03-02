@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { Heading, Image, UnorderedList, Box } from '@chakra-ui/react'
+import { Heading, Image, List, Box } from '@chakra-ui/react'
 import { StyledListItem, StyledText } from '../../utils/styledChakraComponents'
 const RelocationEs: NextPage = () => {
   return (
@@ -8,10 +8,10 @@ const RelocationEs: NextPage = () => {
         <Image src="/family.jpg" alt="Familia Cremades Kaijo" />
       </Box>
 
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>Inglés⇔japonés</StyledListItem>
         <StyledListItem>Español⇔japonés</StyledListItem>
-      </UnorderedList>
+      </List.Root>
       <StyledText mt="2em">
         Básicamente puedo moverme dentro de la prefectura de Fukuoka, pero
         también puedo ayudar fuera de Fukuoka si es algo que puedo hacer a
@@ -20,7 +20,7 @@ const RelocationEs: NextPage = () => {
       <Heading as="h3" size="lg" mt="2em">
         ¿Para quién?
       </Heading>
-      <UnorderedList mt="2em">
+      <List.Root mt="2em">
         <StyledListItem>
           Para empresas o personas que necesitan un intérprete durante una
           reunión, cena o comida.
@@ -37,7 +37,7 @@ const RelocationEs: NextPage = () => {
           Gente que se ha mudado a Itoshima o Fukuoka, y quiere comunicarse con
           sus nuevos vecinos pero no sabe cómo empezar.
         </StyledListItem>
-      </UnorderedList>
+      </List.Root>
     </>
   )
 }
