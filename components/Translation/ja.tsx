@@ -12,7 +12,7 @@ const TranslationJa: NextPage = () => {
         <StyledListItem>英語⇔日本語</StyledListItem>
         <StyledListItem>スペイン語⇔日本語</StyledListItem>
       </List.Root>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         どんな人に向けたサービス？
       </Heading>
       <List.Root mt="2em">

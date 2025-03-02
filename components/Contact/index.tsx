@@ -110,7 +110,12 @@ export default function Contact() {
             />
           </Field.Root>
           <Field.Root id="submit-fc">
-            <Button type="submit" disabled={!isSubmittable()} mb={4}>
+            <Button
+              type="submit"
+              disabled={!isSubmittable()}
+              mb={4}
+              variant="subtle"
+            >
               {t('form.submit.text')}
             </Button>
             {succeeded && <Text color="#080">{t('post.success')}</Text>}

@@ -8,7 +8,7 @@ const RelocationEn: NextPage = () => {
         <Image src="/travel.jpg" alt="Help organizing travel" />
       </Box>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Find airline tickets
       </Heading>
       <List.Root mt="2em">
@@ -16,7 +16,7 @@ const RelocationEn: NextPage = () => {
           I will propose the best flights that meet your request.
         </StyledListItem>
       </List.Root>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Plan an itinerary
       </Heading>
       <List.Root mt="2em">
@@ -26,7 +26,7 @@ const RelocationEn: NextPage = () => {
           something different.
         </StyledListItem>
       </List.Root>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Find accommodation
       </Heading>
       <List.Root mt="2em">
@@ -34,7 +34,7 @@ const RelocationEn: NextPage = () => {
           I will propose the best accommodation that meets your request.
         </StyledListItem>
       </List.Root>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Accompany you to places in Itoshima or Fukuoka
       </Heading>
       <List.Root mt="2em">
@@ -43,7 +43,7 @@ const RelocationEn: NextPage = () => {
           Fukuoka and provide language support. (English and Spanish available.)
         </StyledListItem>
       </List.Root>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Who could find this service useful?
       </Heading>
       <List.Root mt="2em">

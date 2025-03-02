@@ -17,7 +17,7 @@ const Ai: NextPage = () => {
         t('header.tagline')
       }
     >
-      <Heading as="h2" mt="2em">
+      <Heading as="h2" mt="2em" size="5xl">
         {t('ai.title')}
       </Heading>
       {lang === 'ja' && <AiJa />}
