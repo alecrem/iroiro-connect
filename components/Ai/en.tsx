@@ -65,7 +65,7 @@ const AiEn: NextPage = () => {
         meeting people from many countries.
       </StyledText>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Name: Ai Cremadeskaijo
       </Heading>
       <StyledText mt="2em">
@@ -78,7 +78,7 @@ const AiEn: NextPage = () => {
         <b>Languages:</b> Japanese – native, English – fluent, Spanish – fluent
       </StyledText>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Education:
       </Heading>
       <StyledText mt="2em">
@@ -89,7 +89,7 @@ const AiEn: NextPage = () => {
         Apr 1994 – Mar 1998 <b>“Kobe City University of Foreign Studies”</b>
       </StyledText>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Qualifications:
       </Heading>
       <List.Root mt="2em">
@@ -103,7 +103,7 @@ const AiEn: NextPage = () => {
         </StyledListItem>
       </List.Root>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Work Experience:
       </Heading>
 
