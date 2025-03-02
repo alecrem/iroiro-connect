@@ -17,7 +17,7 @@ const Travel: NextPage = () => {
         t('header.tagline')
       }
     >
-      <Heading as="h2" mt="2em">
+      <Heading as="h2" mt="2em" size="5xl">
         {t('travel.title')}
       </Heading>
       {lang === 'ja' && <TravelJa />}

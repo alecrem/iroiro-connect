@@ -17,7 +17,7 @@ const RelocationEs: NextPage = () => {
         también puedo ayudar fuera de Fukuoka si es algo que puedo hacer a
         través de internet o el teléfono.
       </StyledText>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         ¿Para quién?
       </Heading>
       <List.Root mt="2em">

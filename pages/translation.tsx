@@ -21,7 +21,7 @@ const Translation: NextPage = () => {
         t('header.tagline')
       }
     >
-      <Heading as="h2" mt="2em">
+      <Heading as="h2" mt="2em" size="5xl">
         {t('translation.title')}
       </Heading>
       {lang === 'ja' && <TranslationJa />}

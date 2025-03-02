@@ -29,7 +29,7 @@ const RelocationJa: NextPage = () => {
           荷ほどきや子守り、買い物など、手が足りない部分をサポートします。
         </StyledListItem>
       </List.Root>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         どんな人へ向けたサービス？
       </Heading>
       <List.Root mt="2em">

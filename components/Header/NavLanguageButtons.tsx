@@ -21,6 +21,7 @@ const NavLanguageButtons: FC<IProps> = (props: {
         <Box p={4} pr={0}>
           <Button
             size={props.size}
+            variant="subtle"
             onClick={async () => await setLanguage('ja')}
           >
             日本語
@@ -31,6 +32,7 @@ const NavLanguageButtons: FC<IProps> = (props: {
         <Box p={4} pr={0}>
           <Button
             size={props.size}
+            variant="subtle"
             onClick={async () => await setLanguage('es')}
           >
             Español
@@ -41,6 +43,7 @@ const NavLanguageButtons: FC<IProps> = (props: {
         <Box p={4} pr={0}>
           <Button
             size={props.size}
+            variant="subtle"
             onClick={async () => await setLanguage('en')}
           >
             English

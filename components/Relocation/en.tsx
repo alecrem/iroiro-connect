@@ -40,7 +40,7 @@ const RelocationEn: NextPage = () => {
         too, if there is anything I can do by only using a phone or the
         internet.
       </StyledText>
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Who could find this service useful?
       </Heading>
       <List.Root mt="2em">

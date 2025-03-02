@@ -71,8 +71,10 @@ const Header: FC = () => {
           htmlWidth={'64'}
         />
         <VStack alignItems="left">
-          <Heading as="h1">{t('header.title')}</Heading>
-          <Heading as="h4" size="xs">
+          <Heading as="h1" size="3xl">
+            {t('header.title')}
+          </Heading>
+          <Heading as="h4" size="sm">
             {t('header.tagline')}
           </Heading>
         </VStack>
@@ -84,7 +86,7 @@ const Header: FC = () => {
         pl={'88px'}
       >
         <NavLinksDesktop />
-        <NavLanguageButtons size="xs" />
+        <NavLanguageButtons size="2xs" />
       </Flex>
     </>
   )

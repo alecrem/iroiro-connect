@@ -45,7 +45,7 @@ const AiEs: NextPage = () => {
         inglés; como persona que se mudó a Itoshima con su familia, como madre…
       </StyledText>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Nombre: Ai Cremades Kaijo
       </Heading>
       <StyledText mt="2em">
@@ -58,7 +58,7 @@ const AiEs: NextPage = () => {
         <b>Idiomas:</b> japonés – nativo, español – avanzado, inglés – avanzado
       </StyledText>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Educación:
       </Heading>
       <StyledText mt="2em">
@@ -68,7 +68,7 @@ const AiEs: NextPage = () => {
         Abr 1994 – Mar 1998 <b>“Kobe City University of Foreign Studies”</b>
       </StyledText>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Certificaciones:
       </Heading>
       <List.Root mt="2em">
@@ -82,7 +82,7 @@ const AiEs: NextPage = () => {
         </StyledListItem>
       </List.Root>
 
-      <Heading as="h3" size="lg" mt="2em">
+      <Heading as="h3" size="4xl" mt="2em">
         Experiencia profesional:
       </Heading>
       <StyledText mt="2em">

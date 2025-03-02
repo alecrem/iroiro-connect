@@ -15,7 +15,7 @@ const Layout: React.FC<Props> = ({ children, title }) => {
       <Head>
         <title>{title}</title>
       </Head>
-      <Container maxW="container.lg" mt="2em" mb="4em">
+      <Container maxW="5xl" mt="2em" mb="4em">
         <Header />
         {children}
         <Footer />
