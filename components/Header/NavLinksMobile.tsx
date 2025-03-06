@@ -3,6 +3,7 @@ import { FC } from 'react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import useTranslation from 'next-translate/useTranslation'
+import { ColorModeButton } from '../ui/color-mode'
 
 const NavLinksMobile: FC = () => {
   const router = useRouter()
@@ -64,6 +65,7 @@ const NavLinksMobile: FC = () => {
           {t('header.nav.contact')}
         </Button>
       </NextLink>
+      <ColorModeButton size="md" my={2} />
     </>
   )
 }

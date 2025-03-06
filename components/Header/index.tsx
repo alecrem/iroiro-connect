@@ -12,10 +12,12 @@ import useTranslation from 'next-translate/useTranslation'
 import NavLinksMobile from './NavLinksMobile'
 import NavLinksDesktop from './NavLinksDesktop'
 import NavLanguageButtons from './NavLanguageButtons'
+import { ColorModeButton, useColorModeValue } from '@/components/ui/color-mode'
 
 const Header: FC = () => {
   const [display, changeDisplay] = useState('none')
   const { t } = useTranslation('common')
+  const bgColor = useColorModeValue('gray.50', 'gray.900')
   return (
     <>
       <Flex>
@@ -23,19 +25,24 @@ const Header: FC = () => {
           <IconButton
             aria-label="Open Menu"
             size="lg"
+            variant="subtle"
             onClick={() => changeDisplay('flex')}
             // Mobile only
             display={['flex', 'flex', 'none', 'none']}
           >
             <LuMenu />
           </IconButton>
+          <ColorModeButton
+            size="lg"
+            display={['none', 'none', 'flex', 'flex']}
+          />
         </Flex>
 
         <Flex
           w="100vw"
           // Only when menu open
           display={display}
-          bgColor="gray.50"
+          bgColor={bgColor}
           zIndex={20}
           h="100vh"
           pos="fixed"
@@ -86,7 +93,7 @@ const Header: FC = () => {
         pl={'88px'}
       >
         <NavLinksDesktop />
-        <NavLanguageButtons size="2xs" />
+        <NavLanguageButtons size="xs" />
       </Flex>
     </>
   )
