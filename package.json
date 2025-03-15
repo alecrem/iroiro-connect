@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.18",
-    "@chakra-ui/react": "^3.12.0",
+    "@chakra-ui/react": "^3.13.0",
     "@emotion/react": "^11",
     "@types/request-ip": "^0.0.41",
     "airtable": "^0.12.2",
