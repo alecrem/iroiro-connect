@@ -67,6 +67,8 @@ export default function Contact() {
       <form onSubmit={handleSubmit}>
         <VStack gap={5} mt={4}>
           <Field.Root id="name-fc">
+            {/* TODO: Remove @ts-ignore when Chakra UI fixes Field.Label children type definition */}
+            {/* @ts-ignore */}
             <Field.Label>{t('form.name.label')}</Field.Label>
             <Input
               id="name"
@@ -82,6 +84,8 @@ export default function Contact() {
             />
           </Field.Root>
           <Field.Root id="email-fc">
+            {/* TODO: Remove @ts-ignore when Chakra UI fixes Field.Label children type definition */}
+            {/* @ts-ignore */}
             <Field.Label>{t('form.email.label')}</Field.Label>
             <Input
               id="email"
@@ -97,6 +101,8 @@ export default function Contact() {
             />
           </Field.Root>
           <Field.Root id="message-fc">
+            {/* TODO: Remove @ts-ignore when Chakra UI fixes Field.Label children type definition */}
+            {/* @ts-ignore */}
             <Field.Label>{t('form.message.label')}</Field.Label>
             <Textarea
               id="message"
