@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.26.0",
+    "@chakra-ui/react": "^3.27.0",
     "@emotion/react": "^11",
     "@types/request-ip": "^0.0.41",
     "airtable": "^0.12.2",
