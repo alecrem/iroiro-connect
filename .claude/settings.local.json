@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(yarn build)",
+      "WebFetch(domain:www.chakra-ui.com)"
+    ],
+    "deny": []
+  }
+}
