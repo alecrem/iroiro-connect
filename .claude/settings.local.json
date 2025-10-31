@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(yarn build)",
-      "WebFetch(domain:www.chakra-ui.com)"
+      "WebFetch(domain:www.chakra-ui.com)",
+      "Bash(gh issue list:*)"
     ],
     "deny": []
   }
