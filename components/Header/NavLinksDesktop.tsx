@@ -9,31 +9,31 @@ const NavLinksDesktop: FC = () => {
   const { t } = useTranslation('common')
   return (
     <>
-      <NextLink passHref href="/ai" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} pr={1} pt={4} pb={4}>
+      <Link asChild _focus={{ boxShadow: 'none' }} pr={1} pt={4} pb={4}>
+        <NextLink href="/ai" locale={router.locale}>
           {t('header.nav.ai')}
-        </Link>
-      </NextLink>
-      <NextLink passHref href="/" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} href="/" p={4} pr={1}>
+        </NextLink>
+      </Link>
+      <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+        <NextLink href="/" locale={router.locale}>
           {t('header.nav.index')}
-        </Link>
-      </NextLink>
-      <NextLink passHref href="/travel" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+        </NextLink>
+      </Link>
+      <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+        <NextLink href="/travel" locale={router.locale}>
           {t('header.nav.travel')}
-        </Link>
-      </NextLink>
-      <NextLink passHref href="/translation" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+        </NextLink>
+      </Link>
+      <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+        <NextLink href="/translation" locale={router.locale}>
           {t('header.nav.translation')}
-        </Link>
-      </NextLink>
-      <NextLink passHref href="/contact" locale={router.locale}>
-        <Link _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+        </NextLink>
+      </Link>
+      <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
+        <NextLink href="/contact" locale={router.locale}>
           {t('header.nav.contact')}
-        </Link>
-      </NextLink>
+        </NextLink>
+      </Link>
     </>
   )
 }
