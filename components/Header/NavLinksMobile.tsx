@@ -10,61 +10,61 @@ const NavLinksMobile: FC = () => {
   const { t } = useTranslation('common')
   return (
     <>
-      <NextLink passHref href="/ai" locale={router.locale}>
-        <Button
-          as="a"
-          variant="ghost"
-          aria-label={t('header.nav.ai')}
-          my={2}
-          w="100%"
-        >
+      <Button
+        asChild
+        variant="ghost"
+        aria-label={t('header.nav.ai')}
+        my={2}
+        w="100%"
+      >
+        <NextLink href="/ai" locale={router.locale}>
           {t('header.nav.ai')}
-        </Button>
-      </NextLink>
-      <NextLink passHref href="/" locale={router.locale}>
-        <Button
-          as="a"
-          variant="ghost"
-          aria-label={t('header.nav.index')}
-          my={2}
-          w="100%"
-        >
+        </NextLink>
+      </Button>
+      <Button
+        asChild
+        variant="ghost"
+        aria-label={t('header.nav.index')}
+        my={2}
+        w="100%"
+      >
+        <NextLink href="/" locale={router.locale}>
           {t('header.nav.index')}
-        </Button>
-      </NextLink>
-      <NextLink passHref href="/travel" locale={router.locale}>
-        <Button
-          as="a"
-          variant="ghost"
-          aria-label={t('header.nav.travel')}
-          my={2}
-          w="100%"
-        >
+        </NextLink>
+      </Button>
+      <Button
+        asChild
+        variant="ghost"
+        aria-label={t('header.nav.travel')}
+        my={2}
+        w="100%"
+      >
+        <NextLink href="/travel" locale={router.locale}>
           {t('header.nav.travel')}
-        </Button>
-      </NextLink>
-      <NextLink passHref href="/translation" locale={router.locale}>
-        <Button
-          as="a"
-          variant="ghost"
-          aria-label={t('header.nav.translation')}
-          my={2}
-          w="100%"
-        >
+        </NextLink>
+      </Button>
+      <Button
+        asChild
+        variant="ghost"
+        aria-label={t('header.nav.translation')}
+        my={2}
+        w="100%"
+      >
+        <NextLink href="/translation" locale={router.locale}>
           {t('header.nav.translation')}
-        </Button>
-      </NextLink>
-      <NextLink passHref href="/contact" locale={router.locale}>
-        <Button
-          as="a"
-          variant="ghost"
-          aria-label={t('header.nav.contact')}
-          my={2}
-          w="100%"
-        >
+        </NextLink>
+      </Button>
+      <Button
+        asChild
+        variant="ghost"
+        aria-label={t('header.nav.contact')}
+        my={2}
+        w="100%"
+      >
+        <NextLink href="/contact" locale={router.locale}>
           {t('header.nav.contact')}
-        </Button>
-      </NextLink>
+        </NextLink>
+      </Button>
       <ColorModeButton size="md" my={2} />
     </>
   )

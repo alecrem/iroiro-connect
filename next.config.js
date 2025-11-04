@@ -2,7 +2,6 @@
 const nextTranslate = require('next-translate-plugin')
 const nextConfig = nextTranslate({
   reactStrictMode: true,
-  turbopack: {},
   async redirects() {
     return [
       {
