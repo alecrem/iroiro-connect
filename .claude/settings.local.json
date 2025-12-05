@@ -3,7 +3,8 @@
     "allow": [
       "Bash(yarn build)",
       "WebFetch(domain:www.chakra-ui.com)",
-      "Bash(gh issue list:*)"
+      "Bash(gh issue list:*)",
+      "Bash(gh issue view:*)"
     ],
     "deny": []
   }
