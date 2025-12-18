@@ -28,7 +28,7 @@
     "@types/react-dom": "19.2.3",
     "@types/styled-components": "^5.1.36",
     "eslint": "9.39.1",
-    "eslint-config-next": "16.0.10",
+    "eslint-config-next": "16.1.0",
     "next-translate-plugin": "^2.6.2",
     "typescript": "5.9.3"
   }
