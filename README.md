@@ -6,16 +6,16 @@ The UI components are [chakra](https://chakra-ui.com/), and the contact form use
 
 ## Getting Started
 
-First, install all dependencies. We recommend using `yarn` for this project:
+First, install all dependencies:
 
 ```bash
-yarn
+pnpm install
 ```
 
 Then, run the development server:
 
 ```bash
-yarn dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
