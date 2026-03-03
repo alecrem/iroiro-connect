@@ -18,7 +18,7 @@
     "next-translate": "^2.6.2",
     "react": "19.2.4",
     "react-dom": "19.2.4",
-    "react-icons": "^5.5.0",
+    "react-icons": "^5.6.0",
     "request-ip": "^3.3.0",
     "styled-components": "^6.3.11"
   },
