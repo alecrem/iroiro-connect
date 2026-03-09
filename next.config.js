@@ -2,6 +2,10 @@
 const nextTranslate = require('next-translate-plugin')
 const nextConfig = nextTranslate({
   reactStrictMode: true,
+  i18n: {
+    locales: ['en', 'ja', 'es'],
+    defaultLocale: 'ja'
+  },
   async redirects() {
     return [
       {
