@@ -64,8 +64,8 @@ importers:
         specifier: 16.1.6
         version: 16.1.6(@typescript-eslint/parser@8.46.2(eslint@9.39.2)(typescript@5.9.3))(eslint@9.39.2)(typescript@5.9.3)
       next-translate-plugin:
-        specifier: ^3.0.0
-        version: 3.0.0(next-translate@3.0.0(next@16.1.6(@babel/core@7.28.4)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4))
+        specifier: ^3.0.1
+        version: 3.0.1(next-translate@3.0.0(next@16.1.6(@babel/core@7.28.4)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4))
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -1611,8 +1611,8 @@ packages:
       react: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
       react-dom: ^16.8 || ^17 || ^18 || ^19 || ^19.0.0-rc
 
-  next-translate-plugin@3.0.0:
-    resolution: {integrity: sha512-iaMDbt29RRmf31H4eLIDS264WlW6nnbUCfLB9r5EWupy3A8iowfHHtWYBzoiV3/Z6DJUBSQwWs0IDogxp41Qxg==}
+  next-translate-plugin@3.0.1:
+    resolution: {integrity: sha512-9O1uhVJGwpAgWs2GGcBeRgAqQ5WvkBgRohGfLjVLe0SsqU2xY6QBiZCtjruTia6GR0hC53FsP2FFL+1jakUXQQ==}
     engines: {node: '>=14.15.0'}
     peerDependencies:
       next-translate: '>= 2.4.1'
@@ -4262,7 +4262,7 @@ snapshots:
       react: 19.2.4
       react-dom: 19.2.4(react@19.2.4)
 
-  next-translate-plugin@3.0.0(next-translate@3.0.0(next@16.1.6(@babel/core@7.28.4)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)):
+  next-translate-plugin@3.0.1(next-translate@3.0.0(next@16.1.6(@babel/core@7.28.4)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)):
     dependencies:
       next-translate: 3.0.0(next@16.1.6(@babel/core@7.28.4)(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(react@19.2.4)
       typescript: 5.9.3
