@@ -17,7 +17,7 @@ const NavLinksMobile: FC = () => {
         my={2}
         w="100%"
       >
-        <NextLink href="/ai" locale={router.locale}>
+        <NextLink href={`/${router.locale}/ai`} locale={false}>
           {t('header.nav.ai')}
         </NextLink>
       </Button>
@@ -28,7 +28,7 @@ const NavLinksMobile: FC = () => {
         my={2}
         w="100%"
       >
-        <NextLink href="/" locale={router.locale}>
+        <NextLink href={`/${router.locale}`} locale={false}>
           {t('header.nav.index')}
         </NextLink>
       </Button>
@@ -39,7 +39,7 @@ const NavLinksMobile: FC = () => {
         my={2}
         w="100%"
       >
-        <NextLink href="/travel" locale={router.locale}>
+        <NextLink href={`/${router.locale}/travel`} locale={false}>
           {t('header.nav.travel')}
         </NextLink>
       </Button>
@@ -50,7 +50,7 @@ const NavLinksMobile: FC = () => {
         my={2}
         w="100%"
       >
-        <NextLink href="/translation" locale={router.locale}>
+        <NextLink href={`/${router.locale}/translation`} locale={false}>
           {t('header.nav.translation')}
         </NextLink>
       </Button>
@@ -61,7 +61,7 @@ const NavLinksMobile: FC = () => {
         my={2}
         w="100%"
       >
-        <NextLink href="/contact" locale={router.locale}>
+        <NextLink href={`/${router.locale}/contact`} locale={false}>
           {t('header.nav.contact')}
         </NextLink>
       </Button>

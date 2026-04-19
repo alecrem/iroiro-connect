@@ -10,27 +10,27 @@ const NavLinksDesktop: FC = () => {
   return (
     <>
       <Link asChild _focus={{ boxShadow: 'none' }} pr={1} pt={4} pb={4}>
-        <NextLink href="/ai" locale={router.locale}>
+        <NextLink href={`/${router.locale}/ai`} locale={false}>
           {t('header.nav.ai')}
         </NextLink>
       </Link>
       <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
-        <NextLink href="/" locale={router.locale}>
+        <NextLink href={`/${router.locale}`} locale={false}>
           {t('header.nav.index')}
         </NextLink>
       </Link>
       <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
-        <NextLink href="/travel" locale={router.locale}>
+        <NextLink href={`/${router.locale}/travel`} locale={false}>
           {t('header.nav.travel')}
         </NextLink>
       </Link>
       <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
-        <NextLink href="/translation" locale={router.locale}>
+        <NextLink href={`/${router.locale}/translation`} locale={false}>
           {t('header.nav.translation')}
         </NextLink>
       </Link>
       <Link asChild _focus={{ boxShadow: 'none' }} p={4} pr={1}>
-        <NextLink href="/contact" locale={router.locale}>
+        <NextLink href={`/${router.locale}/contact`} locale={false}>
           {t('header.nav.contact')}
         </NextLink>
       </Link>
