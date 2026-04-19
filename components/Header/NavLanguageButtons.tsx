@@ -1,7 +1,7 @@
 import { Button, Box, ConditionalValue } from '@chakra-ui/react'
 import { FC } from 'react'
 import useTranslation from 'next-translate/useTranslation'
-import setLanguage from 'next-translate/setLanguage'
+import { useRouter } from 'next/router'
 
 interface IProps {
   size: ConditionalValue<
@@ -15,6 +15,11 @@ const NavLanguageButtons: FC<IProps> = (props: {
   >
 }) => {
   const { lang } = useTranslation('common')
+  const router = useRouter()
+
+  const switchLanguage = (locale: string) =>
+    router.push(`/${locale}${router.asPath}`, undefined, { locale: false })
+
   return (
     <>
       {lang !== 'ja' && (
@@ -22,7 +27,7 @@ const NavLanguageButtons: FC<IProps> = (props: {
           <Button
             size={props.size}
             variant="subtle"
-            onClick={async () => await setLanguage('ja')}
+            onClick={() => switchLanguage('ja')}
           >
             日本語
           </Button>
@@ -33,7 +38,7 @@ const NavLanguageButtons: FC<IProps> = (props: {
           <Button
             size={props.size}
             variant="subtle"
-            onClick={async () => await setLanguage('es')}
+            onClick={() => switchLanguage('es')}
           >
             Español
           </Button>
@@ -44,7 +49,7 @@ const NavLanguageButtons: FC<IProps> = (props: {
           <Button
             size={props.size}
             variant="subtle"
-            onClick={async () => await setLanguage('en')}
+            onClick={() => switchLanguage('en')}
           >
             English
           </Button>

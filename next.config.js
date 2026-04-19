@@ -10,22 +10,22 @@ const nextConfig = nextTranslate({
     return [
       {
         source: '/ai-ja',
-        destination: '/ai',
+        destination: '/ja/ai',
         permanent: false
       },
       {
         source: '/travel-ja',
-        destination: '/travel',
+        destination: '/ja/travel',
         permanent: false
       },
       {
         source: '/translation-ja',
-        destination: '/translation',
+        destination: '/ja/translation',
         permanent: false
       },
       {
         source: '/contact-ja',
-        destination: '/contact',
+        destination: '/ja/contact',
         permanent: false
       },
       {
