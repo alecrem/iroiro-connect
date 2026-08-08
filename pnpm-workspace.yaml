@@ -1,0 +1,3 @@
+allowBuilds:
+  next-translate-plugin: false
+  unrs-resolver: false
