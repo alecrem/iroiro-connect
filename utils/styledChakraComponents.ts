@@ -1,5 +1,5 @@
+import { List, Text } from '@chakra-ui/react'
 import styled from 'styled-components'
-import { List, ListItemProps, Text, TextProps } from '@chakra-ui/react'
 
 const StyledListItem = styled(List.Item).attrs({
   mt: '1em'

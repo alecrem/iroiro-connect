@@ -1,18 +1,18 @@
-import type { NextPage } from 'next'
 import { Heading } from '@chakra-ui/react'
+import type { NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
-import Layout from '../components/Layout'
 import Contact from '../components/Contact'
+import Layout from '../components/Layout'
 import {
-  RelocationJa,
+  RelocationEn,
   RelocationEs,
-  RelocationEn
+  RelocationJa
 } from '../components/Relocation/'
 
 const Home: NextPage = () => {
   const { t, lang } = useTranslation('common')
   return (
-    <Layout title={t('header.title') + ' - ' + t('header.tagline')}>
+    <Layout title={`${t('header.title')} - ${t('header.tagline')}`}>
       <Heading as="h2" mt="2em" size="5xl">
         {t('index.title')}
       </Heading>

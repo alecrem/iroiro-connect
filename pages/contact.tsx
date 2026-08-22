@@ -1,8 +1,8 @@
-import type { NextPage } from 'next'
 import { Heading } from '@chakra-ui/react'
+import type { NextPage } from 'next'
 import useTranslation from 'next-translate/useTranslation'
-import Layout from '../components/Layout'
 import Contact from '../components/Contact'
+import Layout from '../components/Layout'
 
 const ContactPage: NextPage = () => {
   const { t } = useTranslation('common')

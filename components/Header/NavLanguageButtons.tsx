@@ -1,7 +1,7 @@
-import { Button, Box, ConditionalValue } from '@chakra-ui/react'
-import { FC } from 'react'
-import useTranslation from 'next-translate/useTranslation'
+import { Box, Button, type ConditionalValue } from '@chakra-ui/react'
 import { useRouter } from 'next/router'
+import useTranslation from 'next-translate/useTranslation'
+import type { FC } from 'react'
 
 interface IProps {
   size: ConditionalValue<

@@ -1,8 +1,8 @@
 import { Button } from '@chakra-ui/react'
-import { FC } from 'react'
 import NextLink from 'next/link'
 import { useRouter } from 'next/router'
 import useTranslation from 'next-translate/useTranslation'
+import type { FC } from 'react'
 import { ColorModeButton } from '../ui/color-mode'
 
 const NavLinksMobile: FC = () => {

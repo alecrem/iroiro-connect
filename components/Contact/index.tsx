@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { Button, VStack, Input, Textarea, Text, Field } from '@chakra-ui/react'
+import { Button, Field, Input, Text, Textarea, VStack } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
-import { StyledText } from '../../utils/styledChakraComponents'
+import { type FormEvent, useState } from 'react'
 import { isValidEmailAddress } from '../../utils/formValidation'
+import { StyledText } from '../../utils/styledChakraComponents'
 
 export default function Contact() {
   const { t } = useTranslation('contact')
@@ -25,15 +25,10 @@ export default function Contact() {
     if (succeeded === true) return false
     return !submitting
   }
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const data = {
-      name: event.target.name.value,
-      email: event.target.email.value,
-      message: event.target.message.value
-    }
-    const JSONdata = JSON.stringify(data)
+    const JSONdata = JSON.stringify({ name, email, message })
     const endpoint = '/api/contact'
 
     const options = {
@@ -52,7 +47,7 @@ export default function Contact() {
       setSucceeded(true)
     } else {
       if (result.errorCode)
-        setErrorMessage(result.message + ` (errorCode ${result.errorCode})`)
+        setErrorMessage(`${result.message} (errorCode ${result.errorCode})`)
       else setErrorMessage(result.message)
       setSubmitting(false)
       setSucceeded(false)
