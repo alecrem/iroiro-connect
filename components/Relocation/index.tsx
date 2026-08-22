@@ -1,4 +1,5 @@
-import RelocationJa from './ja'
-import RelocationEs from './es'
 import RelocationEn from './en'
-export { RelocationJa, RelocationEs, RelocationEn }
+import RelocationEs from './es'
+import RelocationJa from './ja'
+
+export { RelocationEn, RelocationEs, RelocationJa }

@@ -1,8 +1,8 @@
-import { useState } from 'react'
-import { Button, VStack, Input, Textarea, Text, Field } from '@chakra-ui/react'
+import { Button, Field, Input, Text, Textarea, VStack } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
-import { StyledText } from '../../utils/styledChakraComponents'
+import { useState } from 'react'
 import { isValidEmailAddress } from '../../utils/formValidation'
+import { StyledText } from '../../utils/styledChakraComponents'
 
 export default function Contact() {
   const { t } = useTranslation('contact')

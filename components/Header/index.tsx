@@ -1,18 +1,18 @@
-import { FC, useState } from 'react'
 import {
+  Flex,
   Heading,
   HStack,
-  VStack,
-  Image,
   IconButton,
-  Flex
+  Image,
+  VStack
 } from '@chakra-ui/react'
-import { LuMenu, LuX } from 'react-icons/lu'
 import useTranslation from 'next-translate/useTranslation'
-import NavLinksMobile from './NavLinksMobile'
-import NavLinksDesktop from './NavLinksDesktop'
-import NavLanguageButtons from './NavLanguageButtons'
+import { type FC, useState } from 'react'
+import { LuMenu, LuX } from 'react-icons/lu'
 import { ColorModeButton, useColorModeValue } from '@/components/ui/color-mode'
+import NavLanguageButtons from './NavLanguageButtons'
+import NavLinksDesktop from './NavLinksDesktop'
+import NavLinksMobile from './NavLinksMobile'
 
 const Header: FC = () => {
   const [display, changeDisplay] = useState('none')

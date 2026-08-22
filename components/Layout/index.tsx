@@ -1,8 +1,8 @@
-import { ReactElement, ReactNode } from 'react'
-import Head from 'next/head'
 import { Container } from '@chakra-ui/react'
-import Header from '../Header'
+import Head from 'next/head'
+import type { ReactElement, ReactNode } from 'react'
 import Footer from '../Footer'
+import Header from '../Header'
 
 interface Props {
   title: string

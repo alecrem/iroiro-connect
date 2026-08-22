@@ -1,7 +1,7 @@
-import type { NextApiRequest, NextApiResponse } from 'next'
 import Airtable from 'airtable'
+import type AirtableError from 'airtable/lib/airtable_error'
+import type { NextApiRequest, NextApiResponse } from 'next'
 import requestIp from 'request-ip'
-import AirtableError from 'airtable/lib/airtable_error'
 import { isValidEmailAddress } from '../../utils/formValidation'
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {

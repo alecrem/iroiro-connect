@@ -1,4 +1,5 @@
-import TravelJa from './ja'
-import TravelEs from './es'
 import TravelEn from './en'
-export { TravelJa, TravelEs, TravelEn }
+import TravelEs from './es'
+import TravelJa from './ja'
+
+export { TravelEn, TravelEs, TravelJa }
