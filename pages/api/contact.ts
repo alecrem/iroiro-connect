@@ -4,6 +4,16 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import requestIp from 'request-ip'
 import { isValidEmailAddress } from '../../utils/formValidation'
 
+const isAirtableError = (error: unknown): error is AirtableError =>
+  typeof error === 'object' &&
+  error !== null &&
+  'statusCode' in error &&
+  typeof error.statusCode === 'number' &&
+  'error' in error &&
+  typeof error.error === 'string' &&
+  'message' in error &&
+  typeof error.message === 'string'
+
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   if (req.method !== 'POST') {
     res
@@ -55,18 +65,17 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     ipaddress: detectedIp,
     date: new Date().toISOString()
   }
-  let ret
   try {
-    ret = await createRecord()
+    const ret = await createRecord()
+    if (ret.length < 1) {
+      returnGenericError()
+      return
+    }
+    res.status(200).json({ status: 'success', data: { id: ret[0].fields.id } })
   } catch (error) {
-    const err = error as AirtableError
-    returnError(err)
+    if (isAirtableError(error)) returnError(error)
+    else returnGenericError()
   }
-  if (ret == undefined || ret?.length < 1) {
-    returnGenericError()
-    return
-  }
-  res.status(200).json({ status: 'success', data: { id: ret[0].fields.id } })
 }
 
 export default handler
