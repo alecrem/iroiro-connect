@@ -52,7 +52,7 @@ export default function Contact() {
       setSucceeded(true)
     } else {
       if (result.errorCode)
-        setErrorMessage(result.message + ` (errorCode ${result.errorCode})`)
+        setErrorMessage(`${result.message} (errorCode ${result.errorCode})`)
       else setErrorMessage(result.message)
       setSubmitting(false)
       setSucceeded(false)

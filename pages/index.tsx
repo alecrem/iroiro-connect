@@ -12,7 +12,7 @@ import {
 const Home: NextPage = () => {
   const { t, lang } = useTranslation('common')
   return (
-    <Layout title={t('header.title') + ' - ' + t('header.tagline')}>
+    <Layout title={`${t('header.title')} - ${t('header.tagline')}`}>
       <Heading as="h2" mt="2em" size="5xl">
         {t('index.title')}
       </Heading>

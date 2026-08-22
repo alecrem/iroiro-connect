@@ -1,4 +1,4 @@
-import { List, ListItemProps, Text, TextProps } from '@chakra-ui/react'
+import { List, Text } from '@chakra-ui/react'
 import styled from 'styled-components'
 
 const StyledListItem = styled(List.Item).attrs({

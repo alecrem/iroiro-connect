@@ -1,6 +1,6 @@
 import { Box, Heading, Image, List } from '@chakra-ui/react'
 import type { NextPage } from 'next'
-import { StyledListItem, StyledText } from '../../utils/styledChakraComponents'
+import { StyledListItem } from '../../utils/styledChakraComponents'
 
 const RelocationEn: NextPage = () => {
   return (
