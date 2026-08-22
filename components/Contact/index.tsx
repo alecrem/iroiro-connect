@@ -1,6 +1,6 @@
 import { Button, Field, Input, Text, Textarea, VStack } from '@chakra-ui/react'
 import useTranslation from 'next-translate/useTranslation'
-import { useState } from 'react'
+import { type FormEvent, useState } from 'react'
 import { isValidEmailAddress } from '../../utils/formValidation'
 import { StyledText } from '../../utils/styledChakraComponents'
 
@@ -25,15 +25,10 @@ export default function Contact() {
     if (succeeded === true) return false
     return !submitting
   }
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const data = {
-      name: event.target.name.value,
-      email: event.target.email.value,
-      message: event.target.message.value
-    }
-    const JSONdata = JSON.stringify(data)
+    const JSONdata = JSON.stringify({ name, email, message })
     const endpoint = '/api/contact'
 
     const options = {
