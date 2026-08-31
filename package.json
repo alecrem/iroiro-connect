@@ -11,7 +11,7 @@
     "format": "biome check --write"
   },
   "dependencies": {
-    "@chakra-ui/react": "^3.36.1",
+    "@chakra-ui/react": "^3.37.0",
     "@emotion/react": "^11",
     "@types/request-ip": "^0.0.41",
     "airtable": "^0.12.2",
