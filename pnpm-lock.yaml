@@ -22,13 +22,13 @@ importers:
         version: 0.12.2
       next:
         specifier: 16.3.3
-        version: 16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+        version: 16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       next-themes:
         specifier: ^0.4.6
         version: 0.4.6(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       next-translate:
         specifier: ^3.2.0
-        version: 3.2.0(next@16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
+        version: 3.2.0(next@16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
       react:
         specifier: 19.2.8
         version: 19.2.8
@@ -49,8 +49,8 @@ importers:
         specifier: 2.5.11
         version: 2.5.11
       '@types/node':
-        specifier: 26.3.0
-        version: 26.3.0
+        specifier: 26.4.0
+        version: 26.4.0
       '@types/react':
         specifier: 19.2.18
         version: 19.2.18
@@ -62,7 +62,7 @@ importers:
         version: 5.1.36
       next-translate-plugin:
         specifier: ^3.2.0
-        version: 3.2.0(next-translate@3.2.0(next@16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8))
+        version: 3.2.0(next-translate@3.2.0(next@16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8))
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -501,8 +501,8 @@ packages:
   '@types/node@14.18.63':
     resolution: {integrity: sha512-fAtCfv4jJg+ExtXhvCkCqUKZ+4ok/JQk01qDKhL5BDDoS3AxKXhV5/MAVUZyQnSEd2GT92fkgZl0pz0Q0AzcIQ==}
 
-  '@types/node@26.3.0':
-    resolution: {integrity: sha512-L3fgrnchriRC2ExBflb8j4uZZURHZfQsmQeyVzhjcHW4kkwVyo8/0h1B2MVzMTrYUJYu6G7EWs14hW/L9putqw==}
+  '@types/node@26.4.0':
+    resolution: {integrity: sha512-faiGnoIrLH/V8cibOMEAZ8pMw6oXqSukl29ra4mN8GdaB2ZewzeaLj+INpV5N+Z1eKWzY+IzaIZH2EIR6YZRNQ==}
 
   '@types/parse-json@4.0.0':
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
@@ -1665,7 +1665,7 @@ snapshots:
 
   '@types/node@14.18.63': {}
 
-  '@types/node@26.3.0':
+  '@types/node@26.4.0':
     dependencies:
       undici-types: 8.3.0
 
@@ -1681,7 +1681,7 @@ snapshots:
 
   '@types/request-ip@0.0.41':
     dependencies:
-      '@types/node': 26.3.0
+      '@types/node': 26.4.0
 
   '@types/styled-components@5.1.36':
     dependencies:
@@ -2442,17 +2442,17 @@ snapshots:
       react: 19.2.8
       react-dom: 19.2.8(react@19.2.8)
 
-  next-translate-plugin@3.2.0(next-translate@3.2.0(next@16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)):
+  next-translate-plugin@3.2.0(next-translate@3.2.0(next@16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)):
     dependencies:
-      next-translate: 3.2.0(next@16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
+      next-translate: 3.2.0(next@16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8)
       typescript: 5.9.3
 
-  next-translate@3.2.0(next@16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8):
+  next-translate@3.2.0(next@16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8))(react@19.2.8):
     dependencies:
-      next: 16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
+      next: 16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8)
       react: 19.2.8
 
-  next@16.3.3(@types/node@26.3.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
+  next@16.3.3(@types/node@26.4.0)(react-dom@19.2.8(react@19.2.8))(react@19.2.8):
     dependencies:
       '@next/env': 16.3.3
       '@swc/helpers': 0.5.23
@@ -2471,7 +2471,7 @@ snapshots:
       '@next/swc-linux-x64-musl': 16.3.3
       '@next/swc-win32-arm64-msvc': 16.3.3
       '@next/swc-win32-x64-msvc': 16.3.3
-      sharp: 0.35.3(@types/node@26.3.0)
+      sharp: 0.35.3(@types/node@26.4.0)
     transitivePeerDependencies:
       - '@babel/core'
       - '@types/node'
@@ -2548,7 +2548,7 @@ snapshots:
   semver@7.8.5:
     optional: true
 
-  sharp@0.35.3(@types/node@26.3.0):
+  sharp@0.35.3(@types/node@26.4.0):
     dependencies:
       '@img/colour': 1.1.0
       detect-libc: 2.1.2
@@ -2579,7 +2579,7 @@ snapshots:
       '@img/sharp-win32-arm64': 0.35.3
       '@img/sharp-win32-ia32': 0.35.3
       '@img/sharp-win32-x64': 0.35.3
-      '@types/node': 26.3.0
+      '@types/node': 26.4.0
     optional: true
 
   source-map-js@1.2.1: {}
